@@ -37,7 +37,8 @@ section#login {
     height: 500px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
-
+    
+    transform: translate(-50%, -50%);
     transition-duration: .5s; 
     transition-timing-function: ease;
 }
@@ -63,16 +64,16 @@ div#formulario > p {
 }
 
 form > div.campo {
-    background-color: rgb(209, 208, 208);
+    background-color: #3b817f;
     width: 100%;
     height: 40%;
     display: block;
-    border-radius: 5px;
+    border-radius: 6px;
     margin: 5px 0px;
 }
 form > div.campo {
     display: block;
-    border:1px solid black;
+    border: 2px solid #3b817f;
 }
 
 div.campo > label {
@@ -82,14 +83,26 @@ div.campo > label {
 form > div > input {
     background-color: rgb(209, 208, 208);
     border: none;
-    margin: 4px 0px 6px 0px;
-    width: 80%;
-    height: 20px;
+    border-radius: 6px;
+    padding-top: 11px;
+    padding-left: 5px;
+    width: calc(100% - 30px);
+    height: 100%;
 }
+
+form > div > input:focus-within {
+    background-color: white;
+}
+    
 
 form > div > span.material-symbols-outlined {
     background-color: #3b817f;
-    padding-bottom: 10px;
+    padding-bottom: 4px;
+    padding-top: 3px;
+    width: 25px;
+    border-radius: 4px 0px 0px 4px;
+    
+    
     
 }
 
@@ -130,14 +143,7 @@ form > a.botao:hover {
 }
 form > a.botao > span {
     font-size: 1em;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
-/*centralizar o icone do formulario
-.ico {
-    
-    margin: 4px 3px;
-    height: 3%;
-    width: 6%;
-    position: absolute;
-    
-}*/
